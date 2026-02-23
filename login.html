@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viral 2026 Login UI</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+<style>
+body{
+    background: linear-gradient(45deg,#0f172a,#1e293b,#312e81,#4c1d95);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.glass{
+    backdrop-filter: blur(18px);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+</style>
+
+</head>
+
+<body class="h-screen flex items-center justify-center">
+
+<div class="w-[360px] p-8 rounded-2xl shadow-2xl glass text-white text-center">
+
+<h2 class="text-3xl font-bold mb-6">Welcome Back</h2>
+
+<!-- Email -->
+<input 
+type="email"
+placeholder="Email"
+class="w-full p-3 mb-4 rounded-lg bg-white/10 outline-none focus:ring-2 focus:ring-purple-400 placeholder-white/70"
+/>
+
+<!-- Password -->
+<input 
+type="password"
+placeholder="Password"
+class="w-full p-3 mb-6 rounded-lg bg-white/10 outline-none focus:ring-2 focus:ring-purple-400 placeholder-white/70"
+/>
+
+<!-- Login Button -->
+<button class="w-full p-3 rounded-lg font-semibold 
+bg-gradient-to-r from-purple-500 to-blue-500 
+hover:scale-105 transition duration-300 shadow-lg">
+Login
+</button>
+
+<div class="my-5 text-white/60">OR</div>
+
+<!-- Google Login -->
+<button class="w-full p-3 rounded-lg bg-white/10 hover:bg-white/20 transition flex items-center justify-center gap-3">
+<img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" class="w-5">
+Continue with Google
+</button>
+
+</div>
+
+</body>
+</html>
